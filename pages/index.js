@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Header from '../components/Header'; // Import your Header component
 import Image from 'next/image'; // Import Next.js Image component
 import styles from './Home.module.css'; // Import the CSS module
 
@@ -8,9 +7,8 @@ const HomePage = () => {
     <>
       <Head>
         <title>AdmiRadiance</title>
-        <meta name="description" content="Welcome to AdmiRadiance! Your description here." />
+        <meta name="description" content="Welcome to AdmiRadiance! Your hub for exciting Roblox content." />
       </Head>
-      <Header name="AdmiRadiance" /> {/* Pass the name prop to Header */}
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
@@ -21,8 +19,11 @@ const HomePage = () => {
             height={150} // Set the desired height
           />
         </div>
-        <h1>Welcome to AdmiRadiance!</h1>
-        {/* Other content can go here */}
+        <h1 className={styles.title}>Welcome to AdmiRadiance!</h1>
+        <p className={styles.description}>
+          Discover a world of fun and creativity! Let's have fun together!.
+        </p>
+        <button className={styles.ctaButton}>Get Started</button>
       </div>
     </>
   );
