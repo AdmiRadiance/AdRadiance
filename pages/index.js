@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image'; // Import Next.js Image component
+import Link from 'next/link'; // Import Link component for navigation
 import styles from './Home.module.css'; // Import the CSS module
 
 const HomePage = () => {
@@ -21,9 +22,11 @@ const HomePage = () => {
         </div>
         <h1 className={styles.title}>Welcome to AdmiRadiance!</h1>
         <p className={styles.description}>
-          Discover a world of fun and creativity! Let's have fun together!.
+          Discover a world of fun and creativity with Roblox! Join us for gameplay, tutorials, and more.
         </p>
-        <button className={styles.ctaButton}>Get Started</button>
+        <Link href="/your-target-page" passHref>
+          <button className={styles.ctaButton}>Get Started</button>
+        </Link>
       </div>
     </>
   );
