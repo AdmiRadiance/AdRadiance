@@ -21,7 +21,7 @@ const HomePage = () => {
             height={150} // Set the desired height
           />
         </div>
-        <h1>Welcome to AdmiRadiance brothers!</h1>
+        <h1>Welcome to AdmiRadiance!</h1>
         {/* Other content can go here */}
       </div>
     </>
