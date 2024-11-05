@@ -8,7 +8,7 @@ const HomePage = () => {
     <>
       <Head>
         <title>AdmiRadiance</title>
-        <meta name="description" content="Welcome to AdmiRadiance! Your description here." />
+        <meta name="description" content="Welcome to AdmiRadiance brothers! Your description here." />
       </Head>
       <Header name="AdmiRadiance" /> {/* Pass the name prop to Header */}
       <div className={styles.container}>
