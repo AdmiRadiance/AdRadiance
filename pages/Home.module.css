@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .imageContainer {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically, if needed */
+    margin-bottom: 20px; /* Optional: space below the image */
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+    border: 2px solid #333; /* Optional: adds a border around the image */
+  }
+  
