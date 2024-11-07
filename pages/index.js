@@ -12,7 +12,7 @@ const HomePage = () => {
       </Head>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Link href="https://www.youtube.com/@AdmiRadiance" passHref legacyBehavior>
+          <Link href="https://www.youtube.com/@AdmiRadiance">
             <a target="_blank" rel="noopener noreferrer">
               <Image
                 className={styles.profileImage}
@@ -28,7 +28,7 @@ const HomePage = () => {
         <p className={styles.description}>
           Discover a world of fun and creativity with Roblox! Join us for gameplay, tutorials, and more.
         </p>
-        <Link href="/your-target-page" passHref legacyBehavior>
+        <Link href="/your-target-page">
           <a>
             <button className={styles.ctaButton}>Get Started</button>
           </a>
