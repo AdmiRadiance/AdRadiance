@@ -12,26 +12,22 @@ const HomePage = () => {
       </Head>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Link href="https://www.youtube.com/@AdmiRadiance">
-            <a target="_blank" rel="noopener noreferrer">
-              <Image
-                className={styles.profileImage}
-                src="/profile.jpg"
-                alt="Profile Picture"
-                width={150}
-                height={150}
-              />
-            </a>
+          <Link href="https://www.youtube.com/@AdmiRadiance" passHref>
+            <Image
+              className={styles.profileImage}
+              src="/profile.jpg"
+              alt="Profile Picture"
+              width={150}
+              height={150}
+            />
           </Link>
         </div>
         <h1 className={styles.title}>Welcome to AdmiRadiance!</h1>
         <p className={styles.description}>
           Discover a world of fun and creativity with Roblox! Join us for gameplay, tutorials, and more.
         </p>
-        <Link href="/your-target-page">
-          <a>
-            <button className={styles.ctaButton}>Get Started</button>
-          </a>
+        <Link href="/your-target-page" passHref>
+          <button className={styles.ctaButton}>Get Started</button>
         </Link>
       </div>
     </>
