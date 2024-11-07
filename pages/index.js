@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Home.module.css';
 
 const HomePage = () => {
@@ -11,19 +12,27 @@ const HomePage = () => {
       </Head>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image
-            className={styles.profileImage}
-            src="/profile.jpg"
-            alt="Profile Picture"
-            width={150}
-            height={150}
-          />
+          <Link href="https://www.youtube.com/@AdmiRadiance" passHref legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer">
+              <Image
+                className={styles.profileImage}
+                src="/profile.jpg"
+                alt="Profile Picture"
+                width={150}
+                height={150}
+              />
+            </a>
+          </Link>
         </div>
         <h1 className={styles.title}>Welcome to AdmiRadiance!</h1>
         <p className={styles.description}>
           Discover a world of fun and creativity with Roblox! Join us for gameplay, tutorials, and more.
         </p>
-        <button className={styles.ctaButton}>Get Started</button>
+        <Link href="/your-target-page" passHref legacyBehavior>
+          <a>
+            <button className={styles.ctaButton}>Get Started</button>
+          </a>
+        </Link>
       </div>
     </>
   );
